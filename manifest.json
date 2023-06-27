@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "MarketLink",
+    "description": "Add link to Steam marketplace from Market.csgo",
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "js": ["scripts/link.js"],
+          "matches": [
+            "https://market.csgo.com/en/*/*",
+            "https://market.csgo.com/en/*/*/*",
+            "https://market.csgo.com/ru/*"
+          ]
+        }  
+    ], 
+    "web_accessible_resources": [
+      {
+        "resources": ["images/steam_logo.png"],
+        "matches": ["<all_urls>"]
+      }]
+  }
