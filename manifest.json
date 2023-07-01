@@ -7,6 +7,8 @@
         {
           "js": ["scripts/link.js"],
           "matches": [
+            "https://market.csgo.com/en",
+            "https://market.csgo.com/en/*",
             "https://market.csgo.com/en/*/*",
             "https://market.csgo.com/en/*/*/*",
             "https://market.csgo.com/ru/*"

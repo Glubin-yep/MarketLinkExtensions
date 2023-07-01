@@ -1,5 +1,4 @@
 const observer = new MutationObserver(Main);
-
 const config = { childList: true, subtree: false };
 observer.observe(document.body, config);
 
@@ -33,9 +32,9 @@ function Main() {
     let imgPath = chrome.runtime.getURL("images/steam_logo.png")
     steamLogo.src = imgPath;
     steamLogo.alt = 'Steam';
-    steamLogo.style.width = '32px';  // Example style: width of 50 pixels
-    steamLogo.style.height = '32px'; // Example style: height of 50 pixels
-    steamLogo.style.borderRadius = '50%'; // Example style: border radius of 50% for a circular shape
+    steamLogo.style.width = '32px'; 
+    steamLogo.style.height = '32px'; 
+    steamLogo.style.borderRadius = '50%'; 
     steamLogo.style.verticalAlign  = 'middle'; 
     steamLogo.style.marginLeft = '15px';
    
